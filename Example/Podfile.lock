@@ -1,0 +1,16 @@
+PODS:
+  - ANPopUpContainer (0.1.0)
+
+DEPENDENCIES:
+  - ANPopUpContainer (from `../`)
+
+EXTERNAL SOURCES:
+  ANPopUpContainer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ANPopUpContainer: 13c12f911bf42505fffa2f7c37cb4b8ebd3b6e02
+
+PODFILE CHECKSUM: e8858f7f9adc3348d2c919297d972a7982252682
+
+COCOAPODS: 1.2.1

@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		4CAA3F39D28E8B0C9BC84BCB /* Pods_ANPopUpContainer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCEB90A5B1668EAF0B99CF1 /* Pods_ANPopUpContainer_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7184013D5D1F0ECA527E8AC5 /* Pods_ANPopUpContainer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82517CD9B99C1B4FA5805DEE /* Pods_ANPopUpContainer_Example.framework */; };
+		FAA24FC21FA8951F00526B8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24FC01FA8951F00526B8E /* ViewController.swift */; };
+		FAA24FC31FA8951F00526B8E /* CurrencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24FC11FA8951F00526B8E /* CurrencyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		59E1BCA9C2EE09D0B65F23FA /* ANPopUpContainer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ANPopUpContainer.podspec; path = ../ANPopUpContainer.podspec; sourceTree = "<group>"; };
+		59E1BCA9C2EE09D0B65F23FA /* ANPopUpContainer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ANPopUpContainer.podspec; path = ../ANPopUpContainer.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ANPopUpContainer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANPopUpContainer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -42,11 +42,13 @@
 		6CCEB90A5B1668EAF0B99CF1 /* Pods_ANPopUpContainer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANPopUpContainer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82517CD9B99C1B4FA5805DEE /* Pods_ANPopUpContainer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANPopUpContainer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BDB6510164017718D2B7B0F /* Pods-ANPopUpContainer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANPopUpContainer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANPopUpContainer_Tests/Pods-ANPopUpContainer_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AF15C3991A775B48994506C5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AF15C3991A775B48994506C5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B61135AD5A1BBF55BE4EE9E4 /* Pods-ANPopUpContainer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANPopUpContainer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANPopUpContainer_Tests/Pods-ANPopUpContainer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B72D03DA71C48FA43E055EDA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B72D03DA71C48FA43E055EDA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BA0199025F6CD77554CE3FBB /* Pods-ANPopUpContainer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANPopUpContainer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANPopUpContainer_Example/Pods-ANPopUpContainer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BE05AD75BAE06A28F8EC45CB /* Pods-ANPopUpContainer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANPopUpContainer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANPopUpContainer_Example/Pods-ANPopUpContainer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FAA24FC01FA8951F00526B8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAA24FC11FA8951F00526B8E /* CurrencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				FAA24FC11FA8951F00526B8E /* CurrencyTableViewController.swift */,
+				FAA24FC01FA8951F00526B8E /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -361,7 +364,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				FAA24FC31FA8951F00526B8E /* CurrencyTableViewController.swift in Sources */,
+				FAA24FC21FA8951F00526B8E /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +458,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -499,6 +504,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -514,7 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -529,7 +535,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -550,7 +556,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -567,7 +573,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

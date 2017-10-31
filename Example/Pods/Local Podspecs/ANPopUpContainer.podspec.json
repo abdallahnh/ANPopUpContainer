@@ -1,0 +1,22 @@
+{
+  "name": "ANPopUpContainer",
+  "version": "0.1.0",
+  "summary": "A short description of ANPopUpContainer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/abdallahnh/ANPopUpContainer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "abdallahnh": "abdallah.nh@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/abdallahnh/ANPopUpContainer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ANPopUpContainer/Classes/**/*"
+}
