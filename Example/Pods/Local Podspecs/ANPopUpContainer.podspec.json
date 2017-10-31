@@ -1,8 +1,8 @@
 {
   "name": "ANPopUpContainer",
   "version": "0.1.0",
-  "summary": "A short description of ANPopUpContainer.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "PopUpContainer is used to popup any UIViewController or UITableViewController",
+  "description": "PopUpContainer is used to popup any UIViewController or UITableViewController, with animation.",
   "homepage": "https://github.com/abdallahnh/ANPopUpContainer",
   "license": {
     "type": "MIT",
