@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ANPopUpContainer_Example' do
+  pod 'ANPopUpContainer', :path => '../'
+
+  target 'ANPopUpContainer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
