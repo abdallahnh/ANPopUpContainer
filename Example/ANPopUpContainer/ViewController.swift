@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         let currancyView = storyBoard.instantiateViewController(withIdentifier: "CurrencyStoryBoardId") as! CurrencyTableViewController
         let popUpContainer = storyBoard.instantiateViewController(withIdentifier: "PopUPStoryId") as! ANPopUpContainerViewController
          popUpContainer.parentView = self
-        popUpContainer.displayContentController(for: currancyView)
+        popUpContainer.displayContentControllerWithFadeAnimation(for: currancyView)
         self.present(popUpContainer, animated: true, completion: nil)
     }
     

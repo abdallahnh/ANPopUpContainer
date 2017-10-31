@@ -1,5 +1,5 @@
 PODS:
-  - ANPopUpContainer (0.1.0)
+  - ANPopUpContainer (0.1.1)
 
 DEPENDENCIES:
   - ANPopUpContainer (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ANPopUpContainer: af51a7ae7abc8c2242d3efda4cc8c91dd9a60e25
+  ANPopUpContainer: 59c639108f5309281e7691e7ac20230d8cc9c2c7
 
 PODFILE CHECKSUM: e8858f7f9adc3348d2c919297d972a7982252682
 

@@ -52,7 +52,7 @@
         <!--Pop Up Container View Controller-->
         <scene sceneID="bcq-5x-GVd">
             <objects>
-                <viewController storyboardIdentifier="PopUPStoryId" id="82Q-Yn-Ynm" customClass="ANPopUpContainerViewController" customModule="ANPopUpContainer" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PopUPStoryId" modalTransitionStyle="crossDissolve" id="82Q-Yn-Ynm" customClass="ANPopUpContainerViewController" customModule="ANPopUpContainer" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="edj-88-4jT"/>
                         <viewControllerLayoutGuide type="bottom" id="xHU-eQ-jGx"/>

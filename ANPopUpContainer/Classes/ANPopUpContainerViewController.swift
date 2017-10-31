@@ -116,10 +116,17 @@ public class ANPopUpContainerViewController: UIViewController {
     }
     public func displayContentControllerWithFadeAnimation(for viewController: UIViewController) {
         hideContentController(for: viewController)
+        viewController.view.alpha = 0
         
-        UIView.animate(withDuration: 0.25, delay: 0, options: [.curveEaseInOut], animations: {
+        UIView.animate(withDuration: 1, delay: 0.5, options: [.curveEaseInOut], animations: {
             self.displayContentController(for: viewController)
-        }, completion: nil)
+        }, completion:{ (done) in
+            
+            UIView.animate(withDuration: 1, delay: 0.5, options: [], animations: {
+                viewController.view.alpha = 1.0
+            }, completion: nil)
+        })
+        
     }
     public func displayContentControllerWithSlideAnimation(from oldVC: UIViewController, to newVC: UIViewController) {
         
