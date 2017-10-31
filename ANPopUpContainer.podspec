@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ANPopUpContainer'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'PopUpContainer is used to popup any UIViewController or UITableViewController'
 
 # This description is used to generate tags and improve search results.
