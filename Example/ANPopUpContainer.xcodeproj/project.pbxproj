@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7184013D5D1F0ECA527E8AC5 /* Pods_ANPopUpContainer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82517CD9B99C1B4FA5805DEE /* Pods_ANPopUpContainer_Example.framework */; };
+		FA7FB8FE1FA90D4B0076525C /* FirstPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FB8FD1FA90D4B0076525C /* FirstPopupViewController.swift */; };
 		FAA24FC21FA8951F00526B8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24FC01FA8951F00526B8E /* ViewController.swift */; };
 		FAA24FC31FA8951F00526B8E /* CurrencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24FC11FA8951F00526B8E /* CurrencyTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		B72D03DA71C48FA43E055EDA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BA0199025F6CD77554CE3FBB /* Pods-ANPopUpContainer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANPopUpContainer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANPopUpContainer_Example/Pods-ANPopUpContainer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BE05AD75BAE06A28F8EC45CB /* Pods-ANPopUpContainer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANPopUpContainer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANPopUpContainer_Example/Pods-ANPopUpContainer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FA7FB8FD1FA90D4B0076525C /* FirstPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPopupViewController.swift; sourceTree = "<group>"; };
 		FAA24FC01FA8951F00526B8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAA24FC11FA8951F00526B8E /* CurrencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				FA7FB8FD1FA90D4B0076525C /* FirstPopupViewController.swift */,
 			);
 			name = "Example for ANPopUpContainer";
 			path = ANPopUpContainer;
@@ -364,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7FB8FE1FA90D4B0076525C /* FirstPopupViewController.swift in Sources */,
 				FAA24FC31FA8951F00526B8E /* CurrencyTableViewController.swift in Sources */,
 				FAA24FC21FA8951F00526B8E /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

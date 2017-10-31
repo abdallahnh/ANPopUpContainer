@@ -18,7 +18,7 @@ public class ANPopUpContainerViewController: UIViewController {
     //  instance of the parent view controller
     public var parentView: UIViewController!
     //  currentView loaded in the container
-    var currentViewController: UIViewController!
+    public var currentViewController: UIViewController!
     //  constraints
     var topConstraint: NSLayoutConstraint!
     var bottomConstraint: NSLayoutConstraint!
@@ -104,6 +104,14 @@ public class ANPopUpContainerViewController: UIViewController {
             }
            heightConstraint.isActive = true
         }
+        else {
+            if #available(iOS 9.0, *) {
+                heightConstraint = currentViewController.view.heightAnchor.constraint(equalToConstant: viewController.view.frame.size.height)
+                heightConstraint.isActive = true
+            } else {
+                // Fallback on earlier versions
+            }
+        }
         
     }
     public func displayContentControllerWithFadeAnimation(for viewController: UIViewController) {
@@ -146,7 +154,14 @@ public class ANPopUpContainerViewController: UIViewController {
             }
             heightConstraint.isActive = true
         }
-        
+        else {
+            if #available(iOS 9.0, *) {
+                heightConstraint = currentViewController.view.heightAnchor.constraint(equalToConstant: newVC.view.frame.size.height)
+                heightConstraint.isActive = true
+            } else {
+                // Fallback on earlier versions
+            }
+        }
         
         let endFrame: CGRect = CGRect(x: -oldVC.view.frame.size.width, y: oldVC.view.frame.origin.y, width: oldVC.view.frame.size.width, height: oldVC.view.frame.size.height)
         // Start the animation.
