@@ -19,7 +19,34 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ANPopUpContainer'
 ```
-
+## How to use
+### Normal Display
+```
+let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+let popUpContainer = storyBoard.instantiateViewController(withIdentifier: "PopUPStoryId") as! ANPopUpContainerViewController
+    popUpContainer.parentView = self
+let firstView = storyBoard.instantiateViewController(withIdentifier: "FirstPopupStoryBoardId") as! FirstPopupViewController
+    firstView.view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 220)
+    firstView.inPopUpContainer = popUpContainer 
+        
+ popUpContainer.displayContentController(for: firstView)
+ self.present(popUpContainer, animated: true, completion: nil)
+ 
+ ```
+ ### Fade Display
+ ```
+let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+let popUpContainer = storyBoard.instantiateViewController(withIdentifier: "PopUPStoryId") as! ANPopUpContainerViewController
+    popUpContainer.parentView = self
+let firstView = storyBoard.instantiateViewController(withIdentifier: "FirstPopupStoryBoardId") as! FirstPopupViewController
+    firstView.view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 220)
+    firstView.inPopUpContainer = popUpContainer 
+        
+ popUpContainer.displayContentControllerWithFadeAnimation(for: firstView)
+ self.present(popUpContainer, animated: true, completion: nil)
+ 
+ ```
+        
 ## Author
 
 abdallahnh, abdallah.nh@gmail.com
