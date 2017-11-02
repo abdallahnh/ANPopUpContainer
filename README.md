@@ -21,7 +21,7 @@ pod 'ANPopUpContainer'
 ```
 ## How to use
 ### Normal Display
-```
+```Swift
 let storyBoard = UIStoryboard(name: "Main", bundle: nil)
 let popUpContainer = storyBoard.instantiateViewController(withIdentifier: "PopUPStoryId") as! ANPopUpContainerViewController
     popUpContainer.parentView = self
@@ -34,7 +34,7 @@ let firstView = storyBoard.instantiateViewController(withIdentifier: "FirstPopup
  
  ```
  ### Fade Display
- ```
+ ```Swift
 let storyBoard = UIStoryboard(name: "Main", bundle: nil)
 let popUpContainer = storyBoard.instantiateViewController(withIdentifier: "PopUPStoryId") as! ANPopUpContainerViewController
     popUpContainer.parentView = self
