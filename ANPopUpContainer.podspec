@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ANPopUpContainer'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'PopUpContainer is used to popup any UIViewController or UITableViewController'
 
 # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 PopUpContainer is used to popup any UIViewController or UITableViewController, with animation.
                        DESC
 
-  s.homepage         = 'https://github.com/abdallahnh/ANPopUpContainer'
+  s.homepage         = 'https://cocoapods.org/pods/ANPopUpcontainer'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'abdallahnh' => 'abdallah.nh@gmail.com' }
