@@ -11,7 +11,7 @@ import UIKit
 
 
 public class ANPopUpContainerViewController: UIViewController {
-
+    
     // MARK: - variables
     //  track the keyboard visibility state
     var keyBoardVisible: Bool!
@@ -71,14 +71,14 @@ public class ANPopUpContainerViewController: UIViewController {
         print("keyboardHidden")
         keyBoardVisible = false
     }
-   
+    
     // MARK: - display
     public func displayContentController(for viewController: UIViewController){
         addChildViewController(viewController)
-
+        
         view.addSubview(viewController.view)
         viewController.didMove(toParentViewController: self)
-       
+        
         //edit view layer
         viewController.view.layer.cornerRadius = 5.0
         
@@ -87,7 +87,7 @@ public class ANPopUpContainerViewController: UIViewController {
         viewController.view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint(item: viewController.view, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 10).isActive = true
         NSLayoutConstraint(item: viewController.view, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: -10).isActive = true
-         NSLayoutConstraint(item: viewController.view, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: viewController.view, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
         
         //take copy of viewController
         currentViewController = viewController
@@ -102,7 +102,7 @@ public class ANPopUpContainerViewController: UIViewController {
             } else {
                 // Fallback on earlier versions
             }
-           heightConstraint.isActive = true
+            heightConstraint.isActive = true
         }
         else {
             if #available(iOS 9.0, *) {
@@ -116,10 +116,17 @@ public class ANPopUpContainerViewController: UIViewController {
     }
     public func displayContentControllerWithFadeAnimation(for viewController: UIViewController) {
         hideContentController(for: viewController)
+        viewController.view.alpha = 0
         
-        UIView.animate(withDuration: 0.25, delay: 0, options: [.curveEaseInOut], animations: {
+        UIView.animate(withDuration: 1, delay: 0.5, options: [.curveEaseInOut], animations: {
             self.displayContentController(for: viewController)
-        }, completion: nil)
+        }, completion:{ (done) in
+            
+            UIView.animate(withDuration: 1, delay: 0.5, options: [], animations: {
+                viewController.view.alpha = 1.0
+            }, completion: nil)
+        })
+        
     }
     public func displayContentControllerWithSlideAnimation(from oldVC: UIViewController, to newVC: UIViewController) {
         
@@ -201,10 +208,10 @@ public class ANPopUpContainerViewController: UIViewController {
                 }
                 heightConstraint.isActive = true
             }
-           
+            
         }
     }
-  
+    
     // MARK: - misc
     override public var shouldAutomaticallyForwardAppearanceMethods: Bool{
         return false
@@ -213,7 +220,7 @@ public class ANPopUpContainerViewController: UIViewController {
         if !keyBoardVisible {
             self.dismiss(animated: true, completion: nil)
         }else{
-             self.view.endEditing(true)
+            self.view.endEditing(true)
         }
     }
     override public func didReceiveMemoryWarning() {
